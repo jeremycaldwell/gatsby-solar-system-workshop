@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function PlanetFacts({ name, orbit, img, maxTemp }) {
+export default function PlanetFacts({ name, orbit, img, maxTemp, body }) {
   return (
     <div style={{ textAlign: `center` }}>
       <h1> Greetings Earthling from planet, {name}!</h1>
@@ -10,6 +10,8 @@ export default function PlanetFacts({ name, orbit, img, maxTemp }) {
       </h2>
 
       <img src={img} alt={name} height="250px" />
+
+      {body}
     </div>
   )
 }

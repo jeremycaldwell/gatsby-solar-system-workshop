@@ -4,6 +4,7 @@ const planets = [
     img: "./earth.svg",
     orbit: "365 days",
     maxTemp: "134.1 °F (56.7 °C)",
+    body: "Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui."
   },
   {
     name: "Jupiter",
