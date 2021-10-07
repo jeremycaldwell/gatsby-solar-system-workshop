@@ -1,13 +1,28 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Solar System`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@m0nica`,
-    siteUrl: `https://TBD.com/`,
+    title: `Jeremy's Gatsby Solar System`,
+    description: `This is my test instance of the site.`,
+    author: `@jeremymcaldwell`,
+    authorName: `Jeremy Caldwell`,
+    siteUrl: `https://www.jeremycaldwell.me`,
+    phoneNumber: `509-713-2322`,
+    emailAddress: `jeremy@eternalistic.net`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [".mdx", ".md"],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
